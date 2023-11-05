@@ -4,7 +4,7 @@
 	--color-background: #fff;
 	--color-highlight: #4b67ec;
 	--color-text: #000;
-	--font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+	--font: "Pretendard", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -24,6 +24,8 @@
 	user-select: none !important;
 	-webkit-user-drag: none !important;
 	-webkit-tap-highlight-color: transparent;
+
+	font-family: var(--font);
 }
 
 html,
@@ -31,7 +33,6 @@ body {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 
-	font-family: var(--font);
 	background-color: var(--color-background);
 	color: var(--color-text);
 	font-size: 16px;
