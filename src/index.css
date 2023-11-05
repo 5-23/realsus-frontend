@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/variable/pretendardvariable.css");
+
+:root {
+	--color-background: #fff;
+	--color-highlight: #4b67ec;
+	--color-text: #000;
+	--font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	-webkit-touch-callout: none !important;
+	-webkit-touch-callout: none !important;
+	-webkit-user-select: none !important;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none !important;
+	-webkit-user-drag: none !important;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+
+	font-family: var(--font);
+	background-color: var(--color-background);
+	color: var(--color-text);
+	font-size: 16px;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+}
+
+.pointer {
+	cursor: pointer;
 }
