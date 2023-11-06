@@ -7,9 +7,6 @@ const Answer = () => {
 			<Header />
 
 			<div className={styles.mainWrapper}>
-				{/* <p className={styles.back}>
-					<i class="fa-solid fa-chevron-left"></i> 뒤로가기
-				</p> */}
 				<div className={styles.main}>
 					<div>
 						<div className={styles.circle}></div>
@@ -28,7 +25,7 @@ const Answer = () => {
 					</div>
 					<p>input here</p>
 				</div>
-				<div className={styles.card}>
+				<div className={`${styles.card} ${styles.pin}`}>
 					<div className={styles.titleWrapper}>
 						<div className={styles.iconWrapper}></div>
 						<p>susname</p>

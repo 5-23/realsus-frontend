@@ -1,12 +1,10 @@
 import styles from "../css/Home.module.css";
 import SchoolIcon from "../img/school_icon.svg";
 import Header from "../components/Header";
-import Modal from "../components/Modal";
 
 const Home = () => {
 	return (
 		<div>
-			<Modal />
 			<Header />
 			<div id={styles.app}>
 				<div className={styles.mainWrapper}>
