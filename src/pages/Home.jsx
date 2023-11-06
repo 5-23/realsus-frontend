@@ -1,5 +1,6 @@
 import styles from "../css/Home.module.css";
 import Header from "../components/Header";
+import SchoolIcon from "../img/school_icon.svg";
 
 const Home = () => {
 	return (
@@ -20,7 +21,39 @@ const Home = () => {
 				</div>
 				<div className={styles.cardWrapper}>
 					<div className={styles.card}>
-						<p>선린인터넷고등학교</p>
+						<div className={styles.titleWrapper}>
+							<div className={styles.iconWrapper}>
+								<img src={SchoolIcon} alt="" />
+							</div>
+							<p>선린인터넷고등학교</p>
+						</div>
+						<p>학교설명</p>
+					</div>
+					<div className={styles.card}>
+						<div className={styles.titleWrapper}>
+							<div className={styles.iconWrapper}>
+								<img src={SchoolIcon} alt="" />
+							</div>
+							<p>선린인터넷고등학교</p>
+						</div>
+						<p>학교설명</p>
+					</div>
+					<div className={styles.card}>
+						<div className={styles.titleWrapper}>
+							<div className={styles.iconWrapper}>
+								<img src={SchoolIcon} alt="" />
+							</div>
+							<p>선린인터넷고등학교</p>
+						</div>
+						<p>학교설명</p>
+					</div>
+					<div className={styles.card}>
+						<div className={styles.titleWrapper}>
+							<div className={styles.iconWrapper}>
+								<img src={SchoolIcon} alt="" />
+							</div>
+							<p>선린인터넷고등학교</p>
+						</div>
 						<p>학교설명</p>
 					</div>
 				</div>

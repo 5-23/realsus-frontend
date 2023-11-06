@@ -1,0 +1,44 @@
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#app h1 {
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: 5rem;
+}
+
+.cardWrapper {
+	display: flex;
+	gap: 5rem;
+}
+
+.card {
+	width: 250px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border-radius: 20px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.card:first-child {
+	background-color: #367bfa;
+}
+
+.card:last-child {
+	background-color: #3366ff;
+}
+
+.card img {
+	width: 120px;
+	height: 120px;
+}

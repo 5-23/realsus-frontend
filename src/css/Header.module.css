@@ -1,11 +1,25 @@
 header {
 	display: flex;
 	background-color: rgb(217, 217, 217, 0.11);
-	padding: 0.5rem;
+	padding: 1rem 10rem;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .logo {
 	width: 40px;
-	margin-left: 5vw;
+	/* margin-left: 5vw; */
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.profileImg {
+	width: 40px;
+	height: 40px;
+	background-color: #111;
+	border-radius: 50%;
 }

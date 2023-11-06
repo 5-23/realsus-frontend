@@ -11,6 +11,14 @@
 	flex-direction: column;
 	align-items: center;
 	position: relative;
+	margin-top: 1.5rem;
+}
+
+.circle {
+	background-color: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
 
 .main {
@@ -18,13 +26,22 @@
 	height: 150px;
 	max-width: 1500px;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	flex-direction: row;
+	align-items: start;
+	justify-content: left;
 	color: white;
 	border-radius: 15px;
 	padding: 4rem 1rem;
+	gap: 10px;
 	background: linear-gradient(87deg, #367bfa 16.08%, #25bff6 91.41%);
+
+	> div:first-child {
+		margin-left: 1rem;
+	}
+}
+
+.back {
+	text-align: start;
 }
 
 .main h1 {
@@ -39,64 +56,15 @@
 	padding-bottom: 40px;
 }
 
-.search {
-	display: flex;
-	position: absolute;
-	align-items: center;
-	gap: 10px;
-	bottom: -40px;
-}
-
-.search input {
-	border: 1px solid #eeeeee;
-	border-radius: 8px;
-	padding: 8px 8px;
-	text-indent: 8px;
-	margin-bottom: 1rem;
-	height: 40px;
-	background-color: #fff;
-	transition: border 0.2s ease-in-out;
-	box-shadow: 0px 10px 50px 0px #25bff650;
-	width: 20rem;
-	font-size: 18px;
-}
-
-.search input::placeholder {
-	color: #cccccc;
-	font-size: 18px;
-}
-
-.search input:focus {
-	outline: none;
-}
-
-.search button {
-	box-shadow: 0px 10px 50px 0px #25bff650;
-	border: none;
-	border-radius: 8px;
-	padding: 0.45rem 0.5rem;
-	margin-bottom: 1rem;
-	/* background-color: #367bfa; */
-	background-color: #fff;
-	color: rgb(163, 163, 163);
-	font-weight: 500;
-	cursor: pointer;
-	transition: 0.2s;
-	height: 55px;
-	width: 55px;
-	&:hover {
-		background-color: #eff1f5;
-	}
-}
-
 .cardWrapper {
 	max-width: 1500px;
-	margin-top: 5rem;
+	margin-top: 2rem;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 2rem;
+	width: 100%;
 }
 
 .card {
@@ -130,7 +98,7 @@
 
 .iconWrapper {
 	background-color: #367bfa;
-	border-radius: 10px;
+	border-radius: 50%;
 	width: 45px;
 	height: 45px;
 	display: flex;
