@@ -15,7 +15,7 @@
 * {
 	margin: 0;
 	padding: 0;
-
+	
 	-webkit-touch-callout: none !important;
 	-webkit-touch-callout: none !important;
 	-webkit-user-select: none !important;
@@ -24,9 +24,8 @@
 	user-select: none !important;
 	-webkit-user-drag: none !important;
 	-webkit-tap-highlight-color: transparent;
-
-	font-family: var(--font);
-}
+	
+	font-family: var(--font);}
 
 html,
 body {

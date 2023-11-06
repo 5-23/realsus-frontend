@@ -81,12 +81,17 @@
 	color: rgb(163, 163, 163);
 	font-weight: 500;
 	cursor: pointer;
-	transition: 0.2s;
+	transition: all .2s;
 	height: 55px;
 	width: 55px;
-	&:hover {
-		background-color: #eff1f5;
+	&:hover{
+		transform: scale(1.05);
 	}
+	&:focus{
+		background-color: #eff1f5;
+		transform: scale(0.95);
+	}
+
 }
 
 .cardWrapper {
@@ -111,14 +116,19 @@
 	font-size: 30px;
 	transition: all 0.5s;
 	cursor: pointer;
-	box-shadow: 0 0 50px #00000005;
+	/* box-shadow: 0 0 50px #00000005; */
 	> p:nth-child(2) {
 		font-size: 20px;
 		color: #ddd;
 	}
 	&:hover {
-		box-shadow: 0 0 50px #00000010;
+		box-shadow: 0 0 50px #00000005;
 		transform: translateY(-2px) scale(1.01);
+	}
+
+	> p{
+		padding-top: 10px;
+		padding-left: 1px;
 	}
 }
 
