@@ -20,42 +20,39 @@ const Home = () => {
 					</form>
 				</div>
 				<div className={styles.cardWrapper}>
-					<div className={styles.card}>
-						<div className={styles.titleWrapper}>
-							<div className={styles.iconWrapper}>
-								<img src={SchoolIcon} alt="" />
+					<a href="/school">
+						<div className={styles.card}>
+							<div className={styles.titleWrapper}>
+								<div className={styles.iconWrapper}>
+									<img src={SchoolIcon} alt="" />
+								</div>
+								<p>선린인터넷고등학교</p>
 							</div>
-							<p>선린인터넷고등학교</p>
+							<p>학교설명</p>
 						</div>
-						<p>학교설명</p>
-					</div>
-					<div className={styles.card}>
-						<div className={styles.titleWrapper}>
-							<div className={styles.iconWrapper}>
-								<img src={SchoolIcon} alt="" />
+					</a>
+					<a href="/school">
+						<div className={styles.card}>
+							<div className={styles.titleWrapper}>
+								<div className={styles.iconWrapper}>
+									<img src={SchoolIcon} alt="" />
+								</div>
+								<p>선린인터넷고등학교</p>
 							</div>
-							<p>선린인터넷고등학교</p>
+							<p>학교설명</p>
 						</div>
-						<p>학교설명</p>
-					</div>
-					<div className={styles.card}>
-						<div className={styles.titleWrapper}>
-							<div className={styles.iconWrapper}>
-								<img src={SchoolIcon} alt="" />
+					</a>
+					<a href="/school">
+						<div className={styles.card}>
+							<div className={styles.titleWrapper}>
+								<div className={styles.iconWrapper}>
+									<img src={SchoolIcon} alt="" />
+								</div>
+								<p>선린인터넷고등학교</p>
 							</div>
-							<p>선린인터넷고등학교</p>
+							<p>학교설명</p>
 						</div>
-						<p>학교설명</p>
-					</div>
-					<div className={styles.card}>
-						<div className={styles.titleWrapper}>
-							<div className={styles.iconWrapper}>
-								<img src={SchoolIcon} alt="" />
-							</div>
-							<p>선린인터넷고등학교</p>
-						</div>
-						<p>학교설명</p>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>

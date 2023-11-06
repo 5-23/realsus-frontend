@@ -12,7 +12,10 @@
 	align-items: center;
 	position: relative;
 }
-
+a{
+	text-decoration: none;
+	color: black
+}
 .main {
 	width: calc(100% - 200px);
 	height: 150px;
