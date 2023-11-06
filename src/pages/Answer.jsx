@@ -18,6 +18,7 @@ const Answer = () => {
 				</div>
 			</div>
 			<div className={styles.cardWrapper}>
+				<AnswerBox type={""}/>
 				<div className={styles.card}>
 					<div className={styles.titleWrapper}>
 						<div className={styles.iconWrapper}></div>
@@ -66,3 +67,24 @@ const Answer = () => {
 };
 
 export default Answer;
+
+
+/**
+ * 
+ * @param {{
+ * 		type: null|"pin"|"pop"
+ * }}} props 
+ * @returns 
+ */
+function AnswerBox(props) {
+	return (
+		if (prop)
+		<div className={styles.card}>
+			<div className={styles.titleWrapper}>
+				<div className={styles.iconWrapper}></div>
+				<p>susname</p>
+			</div>
+			<p>input here</p>
+		</div>
+	)
+}
