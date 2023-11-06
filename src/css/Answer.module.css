@@ -92,18 +92,20 @@
 	}
 	&.pin {
 		height: calc(155px + 1rem);
-		> .titleWrapper {
+		> .titleWrapper{
 			padding-top: calc(5px + 2rem);
 		}
 		&::before {
 			content: "고정됨";
-			background-image: url("../img/pin.svg");
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			font-size: 16px;
 			position: absolute;
-			background: linear-gradient(90deg, #367bfa 0.99%, #bb36fa 100%);
+			text-indent: 10px;
+			background: url("../img/pin.svg"), linear-gradient(90deg, #367BFA 0.99%, #BB36FA 100%);
+			background-repeat: no-repeat;
+			background-position: 42% 50%;
 			color: #fff;
 			min-width: 280px;
 			padding: 1rem;
@@ -113,7 +115,7 @@
 		}
 	}
 }
-
+D
 .titleWrapper {
 	display: flex;
 	align-items: center;
