@@ -7,6 +7,7 @@ const Answer = () => {
 			<Header />
 
 			<div className={styles.mainWrapper}>
+				<b type="button"> <img src="back.svg" /> 뒤로가기 </b>
 				<div className={styles.main}>
 					<div>
 						<div className={styles.circle}></div>
@@ -16,6 +17,11 @@ const Answer = () => {
 						<h2>질문 내용</h2>
 					</div>
 				</div>
+			</div>
+			<div className={styles.anscnt}>
+				<hr />
+				<h2>질문 (51개)</h2>
+				
 			</div>
 			<div className={styles.cardWrapper}>
 				<div className={styles.card}>

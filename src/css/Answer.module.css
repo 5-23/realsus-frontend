@@ -6,39 +6,46 @@
 }
 
 .mainWrapper {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	position: relative;
+	display: inline-flex;
+	height: 120px;
+	flex-direction: column;
+	align-items: start;
+	margin-left: 10vw;
 	margin-top: 1.5rem;
+	> b {
+		display: flex;
+		font-weight: 600;
+		gap: 10px;
+		background-color: #F4F4F4;
+		padding: 15px 30px;
+		border-radius: 10000px;
+	}
 }
-
+hr{
+	border: 1 solid #D9D9D9;
+	margin: 80px 0 50px 0;
+}
+.anscnt {
+	margin: 0 5vw;
+}
 .circle {
 	background-color: #fff;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	background: linear-gradient(180deg, #A2FF00 0%, #0091E3 100%);
 }
-
 .main {
-	width: calc(100% - 200px);
-	height: 150px;
-	max-width: 1500px;
-	height: 200px;
 	display: flex;
 	flex-direction: row;
 	align-items: start;
+	height: 150px;
 	justify-content: left;
-	color: white;
+	color: #000;
 	border-radius: 15px;
-	padding: 2rem 1rem;
+	padding: 2rem 0;
 	gap: 10px;
-	background: linear-gradient(87deg, #367bfa 16.08%, #25bff6 91.41%);
-
-	> div:first-child {
-		margin-left: 1rem;
-	}
 }
 
 .back {
@@ -46,16 +53,17 @@
 }
 
 .main h1 {
-	font-size: 40px;
+	font-size: 25px;
 	font-weight: 600;
 	margin-bottom: 0.5rem;
-	margin-top: 0px;
+	margin-top: .5rem;
 }
 
 .main h2 {
 	font-size: 20px;
 	font-weight: 300;
-	padding-bottom: 40px;
+	/* padding-bottom: 40px; */
+	color: #717171;
 }
 
 .cardWrapper {
