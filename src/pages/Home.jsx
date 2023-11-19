@@ -20,39 +20,12 @@ const Home = () => {
 					</form>
 				</div>
 				<div className={styles.cardWrapper}>
-					<a href="/school">
-						<div className={styles.card}>
-							<div className={styles.titleWrapper}>
-								<div className={styles.iconWrapper}>
-									<img src={SchoolIcon} alt="" />
-								</div>
-								<p>선린인터넷고등학교</p>
-							</div>
-							<p>학교설명</p>
-						</div>
-					</a>
-					<a href="/school">
-						<div className={styles.card}>
-							<div className={styles.titleWrapper}>
-								<div className={styles.iconWrapper}>
-									<img src={SchoolIcon} alt="" />
-								</div>
-								<p>선린인터넷고등학교</p>
-							</div>
-							<p>학교설명</p>
-						</div>
-					</a>
-					<a href="/school">
-						<div className={styles.card}>
-							<div className={styles.titleWrapper}>
-								<div className={styles.iconWrapper}>
-									<img src={SchoolIcon} alt="" />
-								</div>
-								<p>선린인터넷고등학교</p>
-							</div>
-							<p>학교설명</p>
-						</div>
-					</a>
+					<School name="sunrint" des="real sus wifi" id="sunrint"/>					
+					<School name="sunrint" des="real sus wifi" id="sunrint"/>					
+					<School name="sunrint" des="real sus wifi" id="sunrint"/>					
+					<School name="sunrint" des="real sus wifi" id="sunrint"/>					
+					<School name="sunrint" des="real sus wifi" id="sunrint"/>					
+					<School name="sunrint" des="real sus wifi" id="sunrint"/>					
 				</div>
 			</div>
 		</div>
@@ -60,3 +33,24 @@ const Home = () => {
 };
 
 export default Home;
+
+/**
+ * @param {{
+*  id: String,
+*  name: String,
+*  des: String
+* }} props 
+*/
+function School(props) {
+   return <a href={`/school/${props.id}`}>
+	   <div className={styles.card}>
+		   <div className={styles.titleWrapper}>
+			   <div className={styles.iconWrapper}>
+				   <img src={SchoolIcon} alt="" />
+			   </div>
+			   <p>{props.name}</p>
+		   </div>
+		   <p>{props.des}</p>
+	   </div>
+   </a>
+}

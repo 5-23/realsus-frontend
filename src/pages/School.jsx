@@ -31,7 +31,10 @@ const School = () => {
 					</div>
 					<hr />
 					<div>
-					<QuestionBox name="red sus" dt={new Date("2023-11-19T08:40:00")} des="sus"/>
+						<QuestionBox id="sus" name="red sus" dt={new Date("2023-11-19T08:40:00")} des="sus"/>
+						<QuestionBox id="sus" name="red sus" dt={new Date("2023-11-19T08:40:00")} des="sus"/>
+						<QuestionBox id="sus" name="red sus" dt={new Date("2023-11-19T08:40:00")} des="sus"/>
+						<QuestionBox id="sus" name="red sus" dt={new Date("2023-11-19T08:40:00")} des="sus"/>
 					</div>
 				</footer>
 			</div>
@@ -47,11 +50,12 @@ export default School;
  *  name: String,
  *  des: String,
  *  dt: Number,
- * }} props 
+ *  id: String
+* }} props 
  * @returns 
  */
 function QuestionBox(props) {
-	return <div className={styles.qbox}>
+	return <a className={styles.qbox} href={`/answer/${props.id}`}>
 		<div className={styles.headWrapper}>
 			<div className={styles.head}>
 				<div className={styles.profile}></div>
@@ -62,5 +66,5 @@ function QuestionBox(props) {
 		<div className={styles.description}>
 			{props.des}
 		</div>
-	</div>
+	</a>
 }
