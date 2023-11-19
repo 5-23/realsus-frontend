@@ -25,7 +25,12 @@
 	-webkit-user-drag: none !important;
 	-webkit-tap-highlight-color: transparent;
 	
-	font-family: var(--font);}
+	font-family: var(--font);
+	--blue: #367BFA;
+	--gradient: linear-gradient(87deg, #367bfa 16.08%, #25bff6 91.41%);
+	--alpha-black: #00000010;
+	--gray: #eff1f5;
+}
 
 html,
 body {

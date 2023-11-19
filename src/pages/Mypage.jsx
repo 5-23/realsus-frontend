@@ -19,22 +19,8 @@ const Mypage = () => {
 					</div>
 				</div>
 
-
 				<div className={styles.cardWrapper}>
-					<a href="/school">
-						<div className={styles.card}>
-							<div className={styles.titleWrapper}>
-								<div className={styles.iconWrapper}>
-									<img src={SchoolIcon} alt="" />
-								</div>
-								<div>
-									<p>n개의 답변</p>
-									<p>Anonymous</p>
-								</div>
-							</div>
-							<p>Que</p>
-						</div>
-					</a>
+					<Card id="sunrint" cnt="10"/>
 				</div>
 			</div>
 		</div>
@@ -42,3 +28,27 @@ const Mypage = () => {
 };
 
 export default Mypage;
+
+
+/**
+ * @param {{
+ * 	id: Number
+ * 	cnt: Number
+ * }} props 
+ */
+function Card(props) {
+	return <a href={`/answer/${props.name}`}>
+			<div className={styles.card}>
+				<div className={styles.titleWrapper}>
+					<div className={styles.iconWrapper}>
+						<img src={SchoolIcon} alt="" />
+					</div>
+					<div>
+						<p>{`${props.cnt}개의 답변`}</p>
+						<p>Anonymous</p>
+					</div>
+				</div>
+				<p>Que</p>
+			</div>
+		</a>
+}

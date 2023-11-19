@@ -20,6 +20,11 @@
 		background-color: #F4F4F4;
 		padding: 15px 30px;
 		border-radius: 10000px;
+		transition: all .5s;
+		&:hover{
+			cursor: pointer;
+			background-color: var(--gray);
+		}
 	}
 }
 hr{
@@ -88,27 +93,36 @@ hr{
 	border-radius: 15px;
 	padding: var(--p);
 	margin-bottom: 1rem;
-	border: 1px solid rgba(0, 0, 0, 0.05);
-	border-bottom: 6px solid rgba(0, 0, 0, 0.05) !important;
+	border: 1px solid var(--alpha-black);
+	border-bottom: 6px solid var(--alpha-black) !important;
 	font-size: 30px;
 	transition: all 0.5s;
 	cursor: pointer;
-	box-shadow: 0 0 50px #00000005;
 	> p:nth-child(3) {
 		font-size: 20px;
 		color: #ddd;
 	}
+	> textarea{
+		margin-top: 10px;
+		max-height: 60px;
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		border: 0;
+		outline: 0;
+	}
 	> .popcnt{
 		position: absolute;
 		display: flex;
+		gap: 5px;
 		align-items: center;
 		color: #ccc;
-		font-size: 20px;
+		font-size: 18px;
 
 		transform: translateY(118px);
 	}
 	&:hover {
-		box-shadow: 0 0 50px #00000010;
+		box-shadow: 0 0 50px var(--alpha-black);
 		transform: translateY(-2px) scale(1.01);
 	}
 	&.pin {
@@ -183,6 +197,7 @@ hr{
 	align-items: center;
 
 	> img {
+		padding-left: 10px;
 		width: 35px;
 	}
 }
