@@ -23,7 +23,7 @@ const Answer = () => {
 			</div>
 			<div className={styles.anscnt}>
 				<hr />
-				<h2>질문 (51개)</h2>
+				<h2>답변 (51개)</h2>
 				
 			</div>
 			<div className={styles.cardWrapper}>
